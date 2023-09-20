@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .heading {
+        font-size: 48px;
+        text-align: center;
+        color: green;
+        font-weight: bolder;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Quran</title>
+  </head>
+  <body>
+    <h1 class="heading">Digital Quran</h1>
+    <div>
+      <iframe
+        src="images/DigitalQuran.pdf"
+        frameborder="0"
+        width="100%"
+        id="myIframe"
+      ></iframe>
+    </div>
+  </body>
+  <script>
+    // Get a reference to the iframe element
+    const iframe = document.getElementById("myIframe");
+
+    // Function to adjust iframe height based on the viewport size
+    function adjustIframeHeight() {
+      // You can add more conditions here if needed
+      if (window.innerWidth <= 768) {
+        iframe.style.height = "300px"; // Small screen height
+      } else if (window.innerWidth >= 1200) {
+        iframe.style.height = "600px"; // Large screen height
+      } else {
+        iframe.style.height = "400px"; // Default height
+      }
+    }
+
+    // Call the function on page load and when the window is resized
+    window.addEventListener("load", adjustIframeHeight);
+    window.addEventListener("resize", adjustIframeHeight);
+  </script>
+</html>

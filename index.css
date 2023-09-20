@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 4.374rem;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  user-select: none;
+  font-size: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+  font-size: 26px;
+}
+.darrodSharif {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+.heavenPageImg {
+  width: 172px;
+  height: 183px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wealth {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  user-select: none;
+  /* font-size: 17px; */
+}
+
+/* Default iframe height */
+#myIframe {
+  height: 400px;
+}
+
+/* Media query for small screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  #myIframe {
+    height: 250px; /* Set height for small screens */
+  }
+}
+
+/* Media query for large screens (adjust the min-width as needed) */
+@media (min-width: 1200px) {
+  #myIframe {
+    height: 600px; /* Set height for large screens */
+  }
+}
